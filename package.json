@@ -1,0 +1,19 @@
+{
+  "name": "typing",
+  "version": "0.1.0",
+  "description": "A plug-in with effect of typing",
+  "main": "typing.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeDaraW/typing.git"
+  },
+  "author": "DaraW",
+  "license": "MIT",
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-jslint": "^0.2.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.2"
+  }
+}
