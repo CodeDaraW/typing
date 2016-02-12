@@ -1,7 +1,8 @@
 # 打字机特效JS插件
 无需任何依赖，压缩版本不到1k。  
 
-** Demo: [DaraW](http://daraw.cn)**  
+__Demo: [DaraW](http://daraw.cn)__  
+
 ## 使用方法：
 在`html`中引入JS文件：
 ```html
