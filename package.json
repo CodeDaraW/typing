@@ -1,6 +1,6 @@
 {
   "name": "typing",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A plug-in with effect of typing",
   "main": "typing.js",
   "repository": {
@@ -9,11 +9,14 @@
   },
   "author": "DaraW",
   "license": "MIT",
+  "scripts": {
+    "build": "rimraf typing.min.js && uglifyjs typing.js -m -o typing.min.js",
+    "clean": "rimraf typing.min.js",
+    "lint": "eslint typing.js"
+  },
   "devDependencies": {
-    "del": "^2.2.0",
-    "gulp": "^3.9.1",
-    "gulp-jslint": "^0.2.2",
-    "gulp-rename": "^1.2.2",
-    "gulp-uglify": "^1.5.2"
+    "eslint": "^2.8.0",
+    "rimraf": "^2.5.2",
+    "uglifyjs": "^2.4.10"
   }
 }

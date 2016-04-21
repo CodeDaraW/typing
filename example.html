@@ -5,8 +5,32 @@
     <title>Demo</title>
     <script type="text/javascript" src="typing.min.js"></script>
 </head>
+<style>
+    #typingCursor {
+        opacity: 1;
+        -webkit-animation: blink 1s infinite;
+        -moz-animation: blink 1s infinite;
+        animation: blink 1s infinite;
+    }
+    @keyframes blink{
+        0% { opacity:1; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+    }
+    @-webkit-keyframes blink{
+        0% { opacity:1; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+    }
+    @-moz-keyframes blink{
+        0% { opacity:1; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+    }
+</style>
 <body>
-<p id="typingText">This is a test</p>
+<span id="typingText">This is a test</span><span id="typingCursor">|</span>
+
 <script>
     var element = document.querySelector("#typingText");
     var options = {
